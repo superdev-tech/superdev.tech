@@ -1,2 +1,2 @@
 # superdev.tech
-This project has serve for http://www.superdev.tech , Build with Vue.js
+This project builds with Vue.js for the main web site of SUPERDEV CO., LTD.
