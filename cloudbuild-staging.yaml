@@ -1,0 +1,10 @@
+steps:
+  - name: node
+    entrypoint: npm
+    args: ['install']
+  - name: node
+    entrypoint: npm
+    args: ['run', 'build-staging']
+  - name: gcr.io/cloud-builders/gsutil
+    args:
+      ['-m', 'rsync', '-r', '-c', '-d', './dist', 'gs://staging.superdev.tech']
