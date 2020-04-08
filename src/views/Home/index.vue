@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Welcome to SUPERDEV CO., LTD. on Staging 5" />
+    <HelloWorld msg="Welcome to SUPERDEV CO., LTD. on Staging #6" />
   </div>
 </template>
 
