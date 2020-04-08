@@ -1,12 +1,9 @@
 steps:
+  - name: node
+    entrypoint: npm
+    args: ['install']
+  - name: node
+    entrypoint: npm
+    args: ['run', 'build']
   - name: gcr.io/cloud-builders/gsutil
-    args:
-      [
-        '-m',
-        'rsync',
-        '-r',
-        '-c',
-        '-d',
-        './vision/explore-api',
-        'gs://www.superdev.tech',
-      ]
+    args: ['-m', 'rsync', '-r', '-c', '-d', './dist', 'gs://www.superdev.tech']
