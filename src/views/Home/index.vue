@@ -31,7 +31,7 @@
                     ]"
                     class="font-weight-black"
                   >
-                    SUPERDEV
+                    SUPERDEV {{ $t('hello') }}
                   </span>
                 </v-col>
 

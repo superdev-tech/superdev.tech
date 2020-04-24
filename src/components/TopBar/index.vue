@@ -14,12 +14,15 @@
       </v-toolbar-title>
     </div>
     <v-spacer></v-spacer>
+    <LocaleChanger />
   </v-app-bar>
 </template>
 
 <script>
+import LocaleChanger from '@/components/LocaleChanger';
 export default {
   name: 'TopBar',
+  components: { LocaleChanger },
 };
 </script>
 
