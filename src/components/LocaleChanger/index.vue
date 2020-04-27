@@ -1,9 +1,9 @@
 <template>
   <div>
     <select v-model="$i18n.locale">
-      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{
-        lang
-      }}</option>
+      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
+        {{ lang.toUpperCase() }}
+      </option>
     </select>
   </div>
 </template>
@@ -12,7 +12,7 @@
 export default {
   name: 'LocaleChanger',
   data() {
-    return { langs: ['th', 'en'] };
+    return { langs: ['en', 'th'] };
   },
 };
 </script>

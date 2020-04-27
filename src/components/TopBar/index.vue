@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app dark height="100">
+  <v-app-bar app dark height="80">
     <div class="d-flex align-center">
       <v-img
         alt="Vuetify Logo"
@@ -7,7 +7,7 @@
         contain
         src="@/assets/logo.svg"
         transition="scale-transition"
-        width="100"
+        width="80"
       />
       <v-toolbar-title class="font-weight-black headline">
         SUPERDEV
