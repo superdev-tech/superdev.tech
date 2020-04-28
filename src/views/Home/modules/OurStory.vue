@@ -19,6 +19,22 @@
       >
         {{ $t('ourStory.description') }}
       </v-responsive>
+      <v-row>
+        <v-col cols="12" sm="6">
+          <v-avatar size="150px">
+            <img src="@/assets/supanut_avatar.jpg" alt="Supanut" />
+          </v-avatar>
+          <div>Supanut Dokmaithong</div>
+          <div>Co-Founder, CEO</div>
+        </v-col>
+        <v-col cols="12" sm="6">
+          <v-avatar size="150px">
+            <img src="@/assets/supanut_avatar.jpg" alt="Tanapat" />
+          </v-avatar>
+          <div>Tanapat chantarangkoon</div>
+          <div>Co-Founder, COO</div>
+        </v-col>
+      </v-row>
     </v-container>
 
     <div class="py-12"></div>
