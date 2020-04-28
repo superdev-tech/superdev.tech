@@ -52,22 +52,19 @@ export default {
     return {
       features: [
         {
-          icon: 'mdi-account-group-outline',
-          title: 'Vibrant Community',
-          text:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          icon: 'mdi-web',
+          title: this.$t('ourService.web.title'),
+          text: this.$t('ourService.web.description'),
         },
         {
-          icon: 'mdi-update',
-          title: 'Frequent Updates',
-          text:
-            'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
+          icon: 'mdi-cellphone-android',
+          title: this.$t('ourService.mobile.title'),
+          text: this.$t('ourService.mobile.description'),
         },
         {
-          icon: 'mdi-shield-outline',
-          title: 'Long-term Support',
-          text:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
+          icon: 'mdi-chart-areaspline',
+          title: this.$t('ourService.data.title'),
+          text: this.$t('ourService.data.description'),
         },
       ],
     };
