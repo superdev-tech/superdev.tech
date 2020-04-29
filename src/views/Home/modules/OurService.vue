@@ -20,7 +20,12 @@
           cols="12"
           md="4"
         >
-          <v-card class="py-12 px-4" color="grey lighten-5" flat>
+          <v-card
+            class="py-12 px-4"
+            color="grey lighten-5"
+            min-height="450"
+            flat
+          >
             <v-theme-provider dark>
               <div>
                 <v-avatar color="primary" size="88">
