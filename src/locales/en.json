@@ -5,7 +5,18 @@
   },
   "ourService": {
     "title": "Our Service",
-    "description": "Vuetify is the #1 component library for Vue.js and has been in active\ndevelopment since 2016. The goal of the project is to provide users with\neverything that is needed to build rich and engaging web applications\nusing the Material Design specification. It accomplishes that with a\nconsistent update cycle, Long-term Support (LTS) for previous versions,\nresponsive community engagement, a vast ecosystem of resources and a\ndedication to quality components."
+    "web": {
+      "title": "Web Application",
+      "description": "เรามีทีมงานที่สามารถสร้างเว็บไซต์ของคุณให้เสร็จตามเวลาที่คุณต้องการ เพียงแค่คุณบอกความต้องการของคุณมาเราสามารถสร้างเว็บไซต์ที่สวยงาม รวดเร็ว ทันสมัย ปลอดภัย และเหมาะสมกับธุรกิจของคุณได้อย่างแน่นอน"
+    },
+    "mobile": {
+      "title": "Hybrid Mobile Application",
+      "description": "หากคุณต้องการไฮบริดแอพพลิเคชั่น (Android/iOS) เป็นของตนเอง เพื่อตอบโจทย์ทางธุรกิจเราสามารถสร้างมันให้กับคุณโดยใช้ Flutter ซึ่งเป็นเทคโนโลยีล่าสุดจาก Google"
+    },
+    "data": {
+      "title": "Data Science",
+      "description": "หากคุณต้องการนำข้อมูลดิบของคุณมาใช้ประโยชน์ทางธุรกิจเราสามารถนำข้อมูลพวกนั้นมาผ่านกระบวนการทางสถิติ หรือ Machine Learning แล้วเปลี่ยนข้อมูลให้อยู่ในรูปแบบแผนภาพที่เข้าใจง่ายและสวยงาม"
+    }
   },
   "techStack": {
     "title": "Our Main Tech Stack"
