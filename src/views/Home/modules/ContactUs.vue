@@ -19,7 +19,7 @@
             <v-col cols="12">
               <v-text-field
                 flat
-                label="Name*"
+                :label="$t('contactUs.name')"
                 solo
                 v-model="params.name"
               ></v-text-field>
@@ -28,7 +28,7 @@
             <v-col cols="12">
               <v-text-field
                 flat
-                label="Email*"
+                :label="$t('contactUs.email')"
                 solo
                 v-model="params.email"
               ></v-text-field>
@@ -37,7 +37,7 @@
             <v-col cols="12">
               <v-text-field
                 flat
-                label="Phone Number*"
+                :label="$t('contactUs.subject')"
                 solo
                 v-model="params.phone"
               ></v-text-field>
@@ -46,15 +46,20 @@
             <v-col cols="12">
               <v-textarea
                 flat
-                label="Message*"
+                :label="$t('contactUs.message')"
                 solo
                 v-model="params.message"
               ></v-textarea>
             </v-col>
 
             <v-col class="mx-auto" cols="auto">
-              <v-btn color="accent" x-large @click="submitMessage()">
-                Submit
+              <v-btn
+                color="blue white--text"
+                x-large
+                rounded
+                @click="submitMessage()"
+              >
+                {{ $t('contactUs.submit') }}
               </v-btn>
             </v-col>
           </v-row>

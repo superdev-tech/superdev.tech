@@ -29,7 +29,7 @@
         </v-col>
         <v-col cols="12" sm="6">
           <v-avatar size="150px">
-            <img src="@/assets/supanut_avatar.jpg" alt="Tanapat" />
+            <img src="@/assets/tanapat_avatar.jpg" alt="Tanapat" />
           </v-avatar>
           <div>Tanapat chantarangkoon</div>
           <div>Co-Founder, COO</div>

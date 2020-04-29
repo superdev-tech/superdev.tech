@@ -1,7 +1,7 @@
 <template>
   <section id="tech-stack">
     <v-parallax
-      :height="$vuetify.breakpoint.smAndDown ? 700 : 500"
+      :height="$vuetify.breakpoint.smAndDown ? '' : 500"
       src="@/assets/tech_stack_bg.jpeg"
     >
       <v-container fill-height>

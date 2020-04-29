@@ -3,7 +3,7 @@
     <div class="py-12"></div>
 
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold mb-3">
+      <h2 class="display-2 font-weight-bold mb-3 preline">
         {{ $t('ourService.title') }}
       </h2>
 
@@ -20,7 +20,12 @@
           cols="12"
           md="4"
         >
-          <v-card class="py-12 px-4" color="grey lighten-5" flat>
+          <v-card
+            class="py-12 px-4"
+            color="grey lighten-5"
+            min-height="500"
+            flat
+          >
             <v-theme-provider dark>
               <div>
                 <v-avatar color="primary" size="88">
@@ -71,3 +76,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.preline {
+  white-space: pre-line;
+}
+</style>

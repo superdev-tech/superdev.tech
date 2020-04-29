@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="justify-center" color="#292929" height="50">
+  <v-footer class="justify-center" color="#292929">
     <div class="title font-weight-light grey--text text--lighten-1 text-center">
       Copyright &copy; {{ new Date().getFullYear() }}
       SUPERDEV CO., LTD. —
