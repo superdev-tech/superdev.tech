@@ -21,6 +21,7 @@
                 flat
                 :label="$t('contactUs.name')"
                 solo
+                v-model="params.name"
               ></v-text-field>
             </v-col>
 
@@ -29,6 +30,7 @@
                 flat
                 :label="$t('contactUs.email')"
                 solo
+                v-model="params.email"
               ></v-text-field>
             </v-col>
 
@@ -37,6 +39,7 @@
                 flat
                 :label="$t('contactUs.subject')"
                 solo
+                v-model="params.phone"
               ></v-text-field>
             </v-col>
 
@@ -45,11 +48,17 @@
                 flat
                 :label="$t('contactUs.message')"
                 solo
+                v-model="params.message"
               ></v-textarea>
             </v-col>
 
             <v-col class="mx-auto" cols="auto">
-              <v-btn color="blue white--text" x-large rounded>
+              <v-btn
+                color="blue white--text"
+                x-large
+                rounded
+                @click="submitMessage()"
+              >
                 {{ $t('contactUs.submit') }}
               </v-btn>
             </v-col>
@@ -63,11 +72,32 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'ContactUs',
   components: {},
   data() {
-    return {};
+    return {
+      params: {
+        name: null,
+        email: null,
+        phone: null,
+        message: null,
+      },
+    };
+  },
+  methods: {
+    async submitMessage() {
+      try {
+        const url = process.env.VUE_APP_CONTACTUS_API;
+        const params = this.params;
+        const response = await axios.get(url, { params });
+        console.log(response);
+        alert('Thanks for contact us.');
+      } catch (error) {
+        console.error(error);
+      }
+    },
   },
 };
 </script>
