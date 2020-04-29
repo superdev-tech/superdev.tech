@@ -15,6 +15,11 @@
     "description": "Vuetify is the #1 component library for Vue.js and has been in active\ndevelopment since 2016. The goal of the project is to provide users with\neverything that is needed to build rich and engaging web applications\nusing the Material Design specification. It accomplishes that with a\nconsistent update cycle, Long-term Support (LTS) for previous versions,\nresponsive community engagement, a vast ecosystem of resources and a\ndedication to quality components."
   },
   "contactUs": {
-    "title": "Contact Us"
+    "title": "Contact Us",
+    "name": "Name*",
+    "email": "Email*",
+    "subject": "Subject*",
+    "message": "Message*",
+    "submit": "Submit"
   }
 }

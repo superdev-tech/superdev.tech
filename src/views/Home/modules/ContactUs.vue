@@ -17,24 +17,40 @@
         <v-theme-provider light>
           <v-row>
             <v-col cols="12">
-              <v-text-field flat label="Name*" solo></v-text-field>
+              <v-text-field
+                flat
+                :label="$t('contactUs.name')"
+                solo
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-text-field flat label="Email*" solo></v-text-field>
+              <v-text-field
+                flat
+                :label="$t('contactUs.email')"
+                solo
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-text-field flat label="Subject*" solo></v-text-field>
+              <v-text-field
+                flat
+                :label="$t('contactUs.subject')"
+                solo
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-textarea flat label="Message*" solo></v-textarea>
+              <v-textarea
+                flat
+                :label="$t('contactUs.message')"
+                solo
+              ></v-textarea>
             </v-col>
 
             <v-col class="mx-auto" cols="auto">
-              <v-btn color="accent" x-large>
-                Submit
+              <v-btn color="blue white--text" x-large rounded>
+                {{ $t('contactUs.submit') }}
               </v-btn>
             </v-col>
           </v-row>
