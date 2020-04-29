@@ -17,23 +17,43 @@
         <v-theme-provider light>
           <v-row>
             <v-col cols="12">
-              <v-text-field flat label="Name*" solo></v-text-field>
+              <v-text-field
+                flat
+                label="Name*"
+                solo
+                v-model="params.name"
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-text-field flat label="Email*" solo></v-text-field>
+              <v-text-field
+                flat
+                label="Email*"
+                solo
+                v-model="params.email"
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-text-field flat label="Subject*" solo></v-text-field>
+              <v-text-field
+                flat
+                label="Phone Number*"
+                solo
+                v-model="params.phone"
+              ></v-text-field>
             </v-col>
 
             <v-col cols="12">
-              <v-textarea flat label="Message*" solo></v-textarea>
+              <v-textarea
+                flat
+                label="Message*"
+                solo
+                v-model="params.message"
+              ></v-textarea>
             </v-col>
 
             <v-col class="mx-auto" cols="auto">
-              <v-btn color="accent" x-large>
+              <v-btn color="accent" x-large @click="submitMessage()">
                 Submit
               </v-btn>
             </v-col>
@@ -47,11 +67,32 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'ContactUs',
   components: {},
   data() {
-    return {};
+    return {
+      params: {
+        name: null,
+        email: null,
+        phone: null,
+        message: null,
+      },
+    };
+  },
+  methods: {
+    async submitMessage() {
+      try {
+        const url = process.env.VUE_APP_CONTACTUS_API;
+        const params = this.params;
+        const response = await axios.get(url, { params });
+        console.log(response);
+        alert('Thanks for contact us.');
+      } catch (error) {
+        console.error(error);
+      }
+    },
   },
 };
 </script>
