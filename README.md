@@ -1,4 +1,5 @@
 # superdev.tech
+This project is the main website for www.superdev.tech , This project has automated build and deploy to Google Storage via Google Cloud Build trigger
 
 ## Project setup
 ```
