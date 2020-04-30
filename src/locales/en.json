@@ -29,7 +29,7 @@
     "title": "Contact Us",
     "name": "Name*",
     "email": "Email*",
-    "subject": "Subject*",
+    "phone": "Phone Number*",
     "message": "Message*",
     "submit": "Submit"
   }
