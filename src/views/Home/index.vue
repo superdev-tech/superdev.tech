@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" />
-    <HelloWorld msg="Welcome to SUPERDEV CO., LTD. on Staging #8" />
+    <LandingPage />
+    <OurService />
+    <TechStack />
+    <OurStory />
+    <ContactUs />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld';
+import LandingPage from './modules/LandingPage';
+import OurService from './modules/OurService';
+import TechStack from './modules/TechStack';
+import OurStory from './modules/OurStory';
+import ContactUs from './modules/ContactUs';
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
+  components: { LandingPage, OurService, TechStack, OurStory, ContactUs },
+  data() {
+    return {};
   },
 };
 </script>
