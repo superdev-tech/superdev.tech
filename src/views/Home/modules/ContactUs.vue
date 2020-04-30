@@ -37,7 +37,7 @@
             <v-col cols="12">
               <v-text-field
                 flat
-                :label="$t('contactUs.subject')"
+                :label="$t('contactUs.phone')"
                 solo
                 v-model="params.phone"
               ></v-text-field>
