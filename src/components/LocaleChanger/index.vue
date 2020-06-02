@@ -6,7 +6,7 @@
       </option>
     </select> -->
 
-    <v-btn color="grey darken-2 white--text" rounded @click="changeLang">
+    <v-btn color="grey darken-3 white--text" rounded @click="changeLang">
       {{ displayText }}
     </v-btn>
   </div>
