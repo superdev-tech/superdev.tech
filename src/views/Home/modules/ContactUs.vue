@@ -79,54 +79,56 @@
               </h2>
 
               <v-theme-provider light>
-                <v-row>
-                  <v-col cols="12">
-                    <v-text-field
-                      flat
-                      :label="$t('contactUs.name')"
-                      solo
-                      v-model="params.name"
-                    ></v-text-field>
-                  </v-col>
+                <v-form v-model="valid">
+                  <v-row>
+                    <v-col cols="12">
+                      <v-text-field
+                        flat
+                        :label="$t('contactUs.name')"
+                        solo
+                        v-model="params.name"
+                      ></v-text-field>
+                    </v-col>
 
-                  <v-col cols="12">
-                    <v-text-field
-                      flat
-                      :label="$t('contactUs.email')"
-                      solo
-                      v-model="params.email"
-                    ></v-text-field>
-                  </v-col>
+                    <v-col cols="12">
+                      <v-text-field
+                        flat
+                        :label="$t('contactUs.email')"
+                        solo
+                        v-model="params.email"
+                      ></v-text-field>
+                    </v-col>
 
-                  <v-col cols="12">
-                    <v-text-field
-                      flat
-                      :label="$t('contactUs.phone')"
-                      solo
-                      v-model="params.phone"
-                    ></v-text-field>
-                  </v-col>
+                    <v-col cols="12">
+                      <v-text-field
+                        flat
+                        :label="$t('contactUs.phone')"
+                        solo
+                        v-model="params.phone"
+                      ></v-text-field>
+                    </v-col>
 
-                  <v-col cols="12">
-                    <v-textarea
-                      flat
-                      :label="$t('contactUs.message')"
-                      solo
-                      v-model="params.message"
-                    ></v-textarea>
-                  </v-col>
+                    <v-col cols="12">
+                      <v-textarea
+                        flat
+                        :label="$t('contactUs.message')"
+                        solo
+                        v-model="params.message"
+                      ></v-textarea>
+                    </v-col>
 
-                  <v-col class="mx-auto" cols="auto">
-                    <v-btn
-                      color="blue white--text"
-                      x-large
-                      rounded
-                      @click="submitMessage()"
-                    >
-                      {{ $t('contactUs.submit') }}
-                    </v-btn>
-                  </v-col>
-                </v-row>
+                    <v-col class="mx-auto" cols="auto">
+                      <v-btn
+                        color="blue white--text"
+                        x-large
+                        rounded
+                        @click="submitMessage()"
+                      >
+                        {{ $t('contactUs.submit') }}
+                      </v-btn>
+                    </v-col>
+                  </v-row>
+                </v-form>
               </v-theme-provider>
             </v-card>
           </v-col>
