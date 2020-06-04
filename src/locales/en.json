@@ -43,6 +43,10 @@
       "email2": "E-mail must be valid",
       "phone": "Phone Number is required",
       "message": "Message is required"
+    },
+    "thanksMessage": {
+      "title": "Thank you for your interest",
+      "detail": "ทีมงานของเราจะติดต่อหาคุณเร็วๆ นี้ หากต้องการติดต่ออย่างรวดเร็วกรุณาโทร 085-809-1536 หรือ 095-956-8171"
     }
   }
 }

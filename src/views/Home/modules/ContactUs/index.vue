@@ -1,8 +1,7 @@
 <template>
   <section id="contact-us">
-    <!-- <v-sheet id="contact" color="#333333" dark tag="section" tile> -->
     <v-sheet id="contact" class="grey darken-4" dark tag="section" tile>
-      <div class="py-12"></div>
+      <div class="py-8"></div>
 
       <v-container>
         <h2 class="display-2 font-weight-bold mb-3 text-center text-uppercase">
@@ -140,16 +139,19 @@
         </v-row>
       </v-container>
 
-      <div class="py-12"></div>
+      <div class="py-8"></div>
     </v-sheet>
+    <ThanksMessageModal ref="ThanksMessageModal" />
   </section>
 </template>
 
 <script>
 import axios from 'axios';
+import ThanksMessageModal from './modules/ThanksMessageModal';
+
 export default {
   name: 'ContactUs',
-  components: {},
+  components: { ThanksMessageModal },
   data() {
     return {
       formValid: false,
@@ -172,14 +174,25 @@ export default {
   },
   methods: {
     async submitMessage() {
+      const url = process.env.VUE_APP_CONTACTUS_API;
+      const params = this.params;
+
       try {
-        const url = process.env.VUE_APP_CONTACTUS_API;
-        const params = this.params;
+        this.openThanksMessage();
+        this.clearAllParam();
+
         const response = await axios.get(url, { params });
         console.log(response);
-        alert('Thanks for contact us.');
       } catch (error) {
         console.error(error);
+      }
+    },
+    openThanksMessage() {
+      this.$refs.ThanksMessageModal.openDialog();
+    },
+    clearAllParam() {
+      for (let k of Object.keys(this.params)) {
+        this.params[k] = null;
       }
     },
     openTrustmarkthai() {
