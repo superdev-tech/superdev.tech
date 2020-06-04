@@ -31,10 +31,18 @@
     "line": "Line",
     "facebook": "Facebook",
     "title": "Contact Us",
+    "subTitle": "Send us message",
     "name": "Name*",
     "email": "Email*",
     "phone": "Phone Number*",
     "message": "Message*",
-    "submit": "Submit"
+    "submit": "Submit",
+    "formError": {
+      "name": "Name is required",
+      "email1": "Email is required",
+      "email2": "E-mail must be valid",
+      "phone": "Phone Number is required",
+      "message": "Message is required"
+    }
   }
 }
