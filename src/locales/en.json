@@ -26,11 +26,27 @@
     "description": "Vuetify is the #1 component library for Vue.js and has been in active\ndevelopment since 2016. The goal of the project is to provide users with\neverything that is needed to build rich and engaging web applications\nusing the Material Design specification. It accomplishes that with a\nconsistent update cycle, Long-term Support (LTS) for previous versions,\nresponsive community engagement, a vast ecosystem of resources and a\ndedication to quality components."
   },
   "contactUs": {
+    "companyName": "Superdev Co., Ltd.",
+    "companyAddress": "74 Soi Ramkhamheang 82, Huamark,<br>Bangkapi, Bangkok 10240",
+    "line": "Line",
+    "facebook": "Facebook",
     "title": "Contact Us",
+    "subTitle": "Send us message",
     "name": "Name*",
     "email": "Email*",
     "phone": "Phone Number*",
     "message": "Message*",
-    "submit": "Submit"
+    "submit": "Submit",
+    "formError": {
+      "name": "Name is required",
+      "email1": "Email is required",
+      "email2": "E-mail must be valid",
+      "phone": "Phone Number is required",
+      "message": "Message is required"
+    },
+    "thanksMessage": {
+      "title": "Thank you for your interest",
+      "detail": "ทีมงานของเราจะติดต่อหาคุณเร็วๆ นี้ หากต้องการติดต่ออย่างรวดเร็วกรุณาโทร 085-809-1536 หรือ 095-956-8171"
+    }
   }
 }
