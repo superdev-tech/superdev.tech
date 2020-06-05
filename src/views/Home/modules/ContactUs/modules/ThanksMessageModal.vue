@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'MessageResultModal',
+  name: 'ThanksMessageModal',
   data() {
     return { dialog: false };
   },
