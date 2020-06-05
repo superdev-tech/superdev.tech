@@ -23,7 +23,7 @@
   },
   "ourStory": {
     "title": "Our Story",
-    "description": "Vuetify is the #1 component library for Vue.js and has been in active\ndevelopment since 2016. The goal of the project is to provide users with\neverything that is needed to build rich and engaging web applications\nusing the Material Design specification. It accomplishes that with a\nconsistent update cycle, Long-term Support (LTS) for previous versions,\nresponsive community engagement, a vast ecosystem of resources and a\ndedication to quality components."
+    "description": "ซูเปอร์เดฟเริ่มต้นขึ้นในปี 2020 โดยวิศวกรซอฟต์แวร์สองคนที่มีประสบการณ์ในวงการมากกว่า 7 ปี ซึ่งเคยร่วมงานกับทั้งภาครัฐและบริษัทเอกชนยักษ์ใหญ่ระดับโลก ผู้ก่อตั้งทั้งสองมีเป้าหมายที่จะสร้างแหล่งรวมสุดยอดนักออกแบบและพัฒนา เพื่อรังสรรค์ซอฟต์แวร์ให้กับธุรกิจของลูกค้าอย่างมีประสิทธิภาพ โดยมีปณิธานในการสร้างงานคุณภาพสูงให้เสร็จอย่างรวดเร็วและมีราคาที่เหมาะสม"
   },
   "contactUs": {
     "companyName": "Superdev Co., Ltd.",
