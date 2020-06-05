@@ -148,6 +148,7 @@
 <script>
 import axios from 'axios';
 import ThanksMessageModal from './modules/ThanksMessageModal';
+import clone from 'clone';
 
 export default {
   name: 'ContactUs',
@@ -175,7 +176,7 @@ export default {
   methods: {
     async submitMessage() {
       const url = process.env.VUE_APP_CONTACTUS_API;
-      const params = this.params;
+      const params = clone(this.params);
 
       try {
         this.openThanksMessage();
