@@ -69,7 +69,7 @@
 
 <script>
 import axios from 'axios';
-import clone from 'clone';
+import _ from 'lodash';
 import ThanksMessageModal from './ThanksMessageModal';
 
 export default {
@@ -98,7 +98,7 @@ export default {
   methods: {
     async submitMessage() {
       const url = process.env.VUE_APP_CONTACTUS_API;
-      const params = clone(this.params);
+      const params = _.clone(this.params);
 
       try {
         this.openThanksMessage();
