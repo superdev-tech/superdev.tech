@@ -7,4 +7,4 @@ Vue.use(VueFbCustomerChat, {
   locale: 'th_TH', // default 'en_US'
 });
 
-export default VueFbCustomerChat;
+export default {};
