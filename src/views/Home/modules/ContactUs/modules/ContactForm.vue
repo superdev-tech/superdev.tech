@@ -48,6 +48,19 @@
               ></v-textarea>
             </v-col>
 
+            <v-col cols="12">
+              <v-row justify="center">
+                <vue-recaptcha
+                  ref="recaptcha"
+                  @verify="onVerify"
+                  @expired="onExpired"
+                  :sitekey="sitekey"
+                  :loadRecaptchaScript="true"
+                >
+                </vue-recaptcha>
+              </v-row>
+            </v-col>
+
             <v-col class="mx-auto" cols="auto">
               <v-btn
                 x-large
@@ -71,12 +84,14 @@
 import axios from 'axios';
 import _ from 'lodash';
 import ThanksMessageModal from './ThanksMessageModal';
+import VueRecaptcha from 'vue-recaptcha';
 
 export default {
   name: 'ContactForm',
-  components: { ThanksMessageModal },
+  components: { ThanksMessageModal, VueRecaptcha },
   data() {
     return {
+      sitekey: process.env.VUE_APP_GOOGLE_RECAPTCHA_KEY,
       formValid: false,
       rules: {
         name: [(v) => !!v || this.$t('contactUs.formError.name')],
@@ -117,6 +132,15 @@ export default {
       for (let k of Object.keys(this.params)) {
         this.params[k] = null;
       }
+    },
+    onVerify: function(response) {
+      console.log('Verify: ' + response);
+    },
+    onExpired: function() {
+      console.log('Expired');
+    },
+    resetRecaptcha() {
+      this.$refs.recaptcha.reset();
     },
   },
 };
