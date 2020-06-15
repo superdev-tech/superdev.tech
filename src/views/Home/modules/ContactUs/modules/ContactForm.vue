@@ -52,8 +52,8 @@
               <v-row justify="center">
                 <vue-recaptcha
                   ref="recaptcha"
-                  @verify="onVerify"
-                  @expired="onExpired"
+                  @verify="onRecaptchaVerify"
+                  @expired="onRecaptchaExpired"
                   :sitekey="sitekey"
                   :loadRecaptchaScript="true"
                 >
@@ -66,7 +66,7 @@
                 x-large
                 rounded
                 color="blue white--text"
-                :disabled="!this.formValid"
+                :disabled="!this.formValid || !this.verifyRecaptcha"
                 @click="submitMessage()"
               >
                 {{ $t('contactUs.submit') }}
@@ -92,6 +92,7 @@ export default {
   data() {
     return {
       sitekey: process.env.VUE_APP_GOOGLE_RECAPTCHA_KEY,
+      verifyRecaptcha: false,
       formValid: false,
       rules: {
         name: [(v) => !!v || this.$t('contactUs.formError.name')],
@@ -118,6 +119,7 @@ export default {
       try {
         this.openThanksMessage();
         this.clearAllParam();
+        this.resetRecaptcha();
 
         const response = await axios.get(url, { params });
         console.log(response);
@@ -133,14 +135,15 @@ export default {
         this.params[k] = null;
       }
     },
-    onVerify: function(response) {
-      console.log('Verify: ' + response);
+    onRecaptchaVerify() {
+      this.verifyRecaptcha = true;
     },
-    onExpired: function() {
-      console.log('Expired');
+    onRecaptchaExpired() {
+      this.resetRecaptcha();
     },
     resetRecaptcha() {
       this.$refs.recaptcha.reset();
+      this.verifyRecaptcha = false;
     },
   },
 };
