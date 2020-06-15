@@ -48,12 +48,25 @@
               ></v-textarea>
             </v-col>
 
+            <v-col cols="12">
+              <v-row justify="center">
+                <vue-recaptcha
+                  ref="recaptcha"
+                  @verify="onRecaptchaVerify"
+                  @expired="onRecaptchaExpired"
+                  :sitekey="sitekey"
+                  :loadRecaptchaScript="true"
+                >
+                </vue-recaptcha>
+              </v-row>
+            </v-col>
+
             <v-col class="mx-auto" cols="auto">
               <v-btn
                 x-large
                 rounded
                 color="blue white--text"
-                :disabled="!this.formValid"
+                :disabled="!this.formValid || !this.verifyRecaptcha"
                 @click="submitMessage()"
               >
                 {{ $t('contactUs.submit') }}
@@ -71,12 +84,15 @@
 import axios from 'axios';
 import _ from 'lodash';
 import ThanksMessageModal from './ThanksMessageModal';
+import VueRecaptcha from 'vue-recaptcha';
 
 export default {
   name: 'ContactForm',
-  components: { ThanksMessageModal },
+  components: { ThanksMessageModal, VueRecaptcha },
   data() {
     return {
+      sitekey: process.env.VUE_APP_GOOGLE_RECAPTCHA_KEY,
+      verifyRecaptcha: false,
       formValid: false,
       rules: {
         name: [(v) => !!v || this.$t('contactUs.formError.name')],
@@ -103,6 +119,7 @@ export default {
       try {
         this.openThanksMessage();
         this.clearAllParam();
+        this.resetRecaptcha();
 
         const response = await axios.get(url, { params });
         console.log(response);
@@ -117,6 +134,16 @@ export default {
       for (let k of Object.keys(this.params)) {
         this.params[k] = null;
       }
+    },
+    onRecaptchaVerify() {
+      this.verifyRecaptcha = true;
+    },
+    onRecaptchaExpired() {
+      this.resetRecaptcha();
+    },
+    resetRecaptcha() {
+      this.$refs.recaptcha.reset();
+      this.verifyRecaptcha = false;
     },
   },
 };
