@@ -19,9 +19,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.fb-customerchat,
-.fb_dialog {
-  z-index: 2000 !important;
-}
-</style>
+<style scoped></style>
