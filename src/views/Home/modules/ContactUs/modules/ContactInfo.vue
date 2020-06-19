@@ -18,11 +18,13 @@
 
     <p class="subtitle-1 mb-3">
       <img class="mr-3" :src="require('@/assets/ic_tel.svg')" />
-      <a href="tel:+0858091536" class="white--text text-decoration-none"
-        >085-809-1536</a
-      >,<a href="tel:+0959568171" class="white--text text-decoration-none"
-        >095-956-8171</a
-      >
+      <a href="tel:+66858091536" class="white--text text-decoration-none">
+        +6685-809-1536
+      </a>
+      ,
+      <a href="tel:+66919369626" class="white--text text-decoration-none">
+        +6691-936-9626
+      </a>
     </p>
 
     <v-btn class="green darken-1 mb-8" @click="openLine" rounded>
@@ -33,20 +35,22 @@
       {{ $t('contactUs.facebook') }}
     </v-btn>
 
-    <v-btn
-      @click="openTrustmarkthai"
-      width="150"
-      height="70"
-      class="d-block grey darken-4"
-      tile
-      icon
-    >
-      <img
-        alt="trustmarkthai"
-        width="120"
-        :src="require('@/assets/dbd_logo.svg')"
-      />
-    </v-btn>
+    <div class="text-md-left text-center">
+      <v-btn
+        @click="openTrustmarkthai"
+        width="150"
+        height="70"
+        class="grey darken-4"
+        tile
+        icon
+      >
+        <img
+          alt="trustmarkthai"
+          width="120"
+          :src="require('@/assets/dbd_logo.svg')"
+        />
+      </v-btn>
+    </div>
   </div>
 </template>
 
