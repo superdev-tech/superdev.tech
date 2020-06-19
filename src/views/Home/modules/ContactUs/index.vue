@@ -11,7 +11,11 @@
           <v-divider></v-divider>
         </v-responsive>
         <v-row>
-          <v-col cols="12" md="5" class="px-10 pa-md-5 mt-5 mb-5 mb-md-0">
+          <v-col
+            cols="12"
+            md="5"
+            class="px-10 pa-md-5 mt-5 mb-5 mb-md-0 text-md-left text-center"
+          >
             <ContactInfo />
           </v-col>
           <v-col class="pa-5">
