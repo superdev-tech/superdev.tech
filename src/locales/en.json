@@ -7,15 +7,15 @@
     "title": "Our Service",
     "web": {
       "title": "Web Application",
-      "description": "เรามีทีมงานที่สามารถสร้างเว็บไซต์ของคุณให้เสร็จตามเวลาที่คุณต้องการ เพียงแค่คุณบอกความต้องการของคุณมาเราสามารถสร้างเว็บไซต์ที่สวยงาม รวดเร็ว ทันสมัย ปลอดภัย และเหมาะสมกับธุรกิจของคุณได้อย่างแน่นอน"
+      "description": "What are the important things on the website? Beautiful, Fast load, The lastest Technologies, Security, Suitable for your business? We can include it all to become your perfect website."
     },
     "mobile": {
       "title": "Hybrid Mobile\nApplication",
-      "description": "หากคุณต้องการไฮบริดแอพพลิเคชั่น (Android/iOS) เป็นของตนเอง เพื่อตอบโจทย์ทางธุรกิจเราสามารถสร้างมันให้กับคุณโดยใช้ Flutter ซึ่งเป็นเทคโนโลยีล่าสุดจาก Google"
+      "description": "By Using Flutter, an open-source created by Google. We can make the professional Hybrid Applications (Android / iOS) for your business."
     },
     "data": {
       "title": "Data Science",
-      "description": "หากคุณต้องการนำข้อมูลดิบของคุณมาใช้ประโยชน์ทางธุรกิจเราสามารถนำข้อมูลพวกนั้นมาผ่านกระบวนการทางสถิติ หรือ Machine Learning แล้วเปลี่ยนข้อมูลให้อยู่ในรูปแบบแผนภาพที่เข้าใจง่ายและสวยงาม"
+      "description": "Raw data is like rough diamonds that need some processes. We can transform your raw data to be the most beautiful and precious cut diamonds."
     }
   },
   "techStack": {
@@ -23,7 +23,7 @@
   },
   "ourStory": {
     "title": "Our Story",
-    "description": "ซูเปอร์เดฟเริ่มต้นขึ้นในปี 2020 โดยวิศวกรซอฟต์แวร์สองคนที่มีประสบการณ์ในวงการมากกว่า 7 ปี ซึ่งเคยร่วมงานกับทั้งภาครัฐและบริษัทเอกชนยักษ์ใหญ่ระดับโลก ผู้ก่อตั้งทั้งสองมีเป้าหมายที่จะสร้างแหล่งรวมสุดยอดนักออกแบบและพัฒนา เพื่อรังสรรค์ซอฟต์แวร์ให้กับธุรกิจของลูกค้าอย่างมีประสิทธิภาพ โดยมีปณิธานในการสร้างงานคุณภาพสูงให้เสร็จอย่างรวดเร็วและมีราคาที่เหมาะสม"
+    "description": "Since 2020, Superdev has established as a startup company by experienced software engineers, who developed software for worldwide international companies and the Thailand government departments. The founder aims to create a hub of designer and developer for building high-quality and efficient software at a reasonable price."
   },
   "contactUs": {
     "companyName": "Superdev Co., Ltd.",
