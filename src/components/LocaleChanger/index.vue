@@ -26,6 +26,9 @@ export default {
   },
   computed: {
     displayText() {
+      if (this.$vuetify.breakpoint.xsOnly) {
+        return this.$i18n.locale == 'th' ? 'En' : 'ไทย';
+      }
       return this.$i18n.locale == 'th' ? 'English' : 'ภาษาไทย';
     },
   },

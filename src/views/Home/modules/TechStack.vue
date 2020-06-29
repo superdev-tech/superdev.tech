@@ -24,7 +24,7 @@
 
               <div
                 class="title font-weight-regular text-uppercase"
-                v-text="title"
+                v-html="title"
               ></div>
             </div>
           </v-col>
@@ -43,7 +43,7 @@ export default {
       stacks: [
         ['Vue.js', 'Beautiful Website'],
         ['Node.js', 'Fastest API'],
-        ['Flutter', 'Mobile App (Android & IOS)'],
+        ['Flutter', 'Mobile App<br>(Android & IOS)'],
         ['Python', 'Data science & Data engineering'],
       ],
     };

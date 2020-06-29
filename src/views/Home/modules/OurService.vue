@@ -35,7 +35,7 @@
             </v-theme-provider>
 
             <v-card-title
-              class="justify-center font-weight-black text-uppercase"
+              class="justify-center font-weight-black text-uppercase preline"
               v-text="title"
             ></v-card-title>
 
@@ -54,8 +54,11 @@ export default {
   name: 'OurService',
   components: {},
   data() {
-    return {
-      features: [
+    return {};
+  },
+  computed: {
+    features() {
+      return [
         {
           icon: 'mdi-web',
           title: this.$t('ourService.web.title'),
@@ -71,8 +74,8 @@ export default {
           title: this.$t('ourService.data.title'),
           text: this.$t('ourService.data.description'),
         },
-      ],
-    };
+      ];
+    },
   },
 };
 </script>
