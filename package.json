@@ -13,7 +13,7 @@
     "serve-staging": "vue-cli-service serve --mode staging"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "core-js": "^3.6.4",
     "lodash": "^4.17.15",
